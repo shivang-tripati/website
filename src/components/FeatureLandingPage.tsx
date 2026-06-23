@@ -176,13 +176,16 @@ function SectionContent({ section }: { section: FeaturePage["sections"][number] 
   }
 
   if ("badges" in content && "description" in content) {
-    const banner = content as { badges: string[]; description: string };
+    const banner = content as { badges: Array<string | { name: string; description: string }>; description: string };
     return (
       <div className="rounded-2xl bg-surface-low p-8 border border-primary/20 text-center">
         <div className="flex flex-wrap justify-center gap-3 mb-4">
           {banner.badges.map((badge) => (
-            <span key={badge} className="px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-              {badge}
+            <span
+              key={typeof badge === "string" ? badge : badge.name}
+              className="px-4 py-1.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20"
+            >
+              {typeof badge === "string" ? badge : <><strong>{badge.name}</strong>: {badge.description}</>}
             </span>
           ))}
         </div>
