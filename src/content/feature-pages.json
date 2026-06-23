@@ -1,0 +1,1200 @@
+[
+  {
+    "slug": "auto-call-distribution",
+    "metaTitle": "Intelligent Auto Call Distribution (ACD) – SellSpark",
+    "metaDescription": "Route every call to the right agent instantly. Skill-based, round-robin, and priority routing with real-time load balancing. Reduce wait times, boost CX.",
+    "hero": {
+      "headline": "End Chaotic Call Routing",
+      "subheadline": "ACS ACD matches every inbound call to the best available agent in milliseconds — using skills, priority rules, and live queue data so customers never bounce between the wrong desks.",
+      "visualDescription": "Animated call-flow diagram: a single caller node on the left sends pulsing arrows through a central 'ACD Engine' hub that evaluates skill tags, agent availability, and queue depth, then routes to the highlighted best-match agent on the right. Subtle glow on the winning path; idle agents dimmed."
+    },
+    "sections": [
+      {
+        "type": "howItWorks",
+        "headline": "How ACS ACD Routes Calls in 3 Steps",
+        "content": {
+          "steps": [
+            {
+              "number": 1,
+              "title": "Call Arrives",
+              "description": "A customer dials your business number or clicks through from an IVR menu. SellSpark captures caller ID, queue context, and any CRM data attached to the number.",
+              "icon": "phone-incoming"
+            },
+            {
+              "number": 2,
+              "title": "ACD Engine Evaluates",
+              "description": "The routing engine checks agent skills, current workload, priority tier, business hours, and overflow rules — all in real time, with no manual intervention.",
+              "icon": "cpu-chip"
+            },
+            {
+              "number": 3,
+              "title": "Best Agent Answers",
+              "description": "The call lands with the right person on the first ring. If no match is available, overflow rules kick in — backup queues, voicemail, or callback scheduling.",
+              "icon": "user-check"
+            }
+          ]
+        }
+      },
+      {
+        "type": "benefitCards",
+        "headline": "Measurable Results from Smarter Routing",
+        "content": {
+          "cards": [
+            {
+              "stat": "47%",
+              "label": "Faster Answer Time",
+              "description": "Teams using skill-based routing report nearly half the average speed-to-answer compared to manual queue assignment."
+            },
+            {
+              "stat": "32%",
+              "label": "Fewer Dropped Calls",
+              "description": "Intelligent overflow and load balancing keep callers connected instead of hanging up during long holds."
+            },
+            {
+              "stat": "2.4×",
+              "label": "Higher First-Call Resolution",
+              "description": "When calls reach skilled agents immediately, issues get solved on the first conversation — not the third transfer."
+            },
+            {
+              "stat": "99.9%",
+              "label": "Routing Uptime",
+              "description": "Cloud-native architecture ensures your ACD rules run reliably, even during peak campaign surges."
+            }
+          ]
+        }
+      },
+      {
+        "type": "useCasesAccordion",
+        "headline": "ACD Built for Every Team Structure",
+        "content": {
+          "items": [
+            {
+              "title": "Inbound Customer Support",
+              "description": "Route billing queries to finance-trained agents, technical issues to L2 specialists, and VIP accounts to dedicated relationship managers — automatically, based on IVR selection and CRM tags."
+            },
+            {
+              "title": "Outbound Sales Teams",
+              "description": "Blend inbound callbacks with outbound campaigns. Returning callers reconnect with the same rep who called them, preserving context and closing rates."
+            },
+            {
+              "title": "Blended Contact Centers",
+              "description": "Balance inbound and outbound workloads across a shared agent pool. ACS shifts capacity dynamically so no queue starves while agents sit idle."
+            },
+            {
+              "title": "Multi-Location Operations",
+              "description": "Distribute calls across offices or remote teams using geographic routing, time-zone rules, and follow-the-sun overflow for 24/7 coverage."
+            }
+          ]
+        }
+      },
+      {
+        "type": "integrationNote",
+        "headline": "Works With the Tools You Already Use",
+        "content": {
+          "description": "ACS ACD pulls customer history from your CRM at routing time — so agents see who is calling before they pick up. Native integrations with Salesforce, HubSpot, Zoho, and 200+ platforms mean smarter routing without extra setup.",
+          "ctaLink": "/features/crm-integrations",
+          "ctaText": "Explore CRM integrations"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is skill-based routing in ACD?",
+        "answer": "Skill-based routing assigns incoming calls to agents who have the right expertise — such as language fluency, product knowledge, or certification level. SellSpark lets you tag agents with multiple skills and weight them so the best match always gets the call first."
+      },
+      {
+        "question": "How does SellSpark handle overflow when all agents are busy?",
+        "answer": "You define overflow rules per queue: route to a backup team, play a callback offer, send to voicemail, or queue with position announcements. Rules trigger automatically based on wait time, queue depth, or business hours."
+      },
+      {
+        "question": "Can I use round-robin and priority routing together?",
+        "answer": "Yes. SellSpark supports round-robin for fair distribution, priority tiers for VIP callers, and longest-idle-agent logic — all combinable in a single routing profile so you can fine-tune behavior per queue."
+      },
+      {
+        "question": "Does ACD work with remote and hybrid agents?",
+        "answer": "Absolutely. Agents connect via browser softphone or mobile app. The ACD engine treats on-site and remote agents identically, routing based on availability and skills regardless of location."
+      },
+      {
+        "question": "How quickly can we set up ACD for our contact center?",
+        "answer": "Most teams go live within a day. Create queues, assign skills, and define routing rules in the SellSpark dashboard — no hardware or PBX configuration required."
+      }
+    ],
+    "cta": {
+      "text": "Find the Right Route – See ACD in Action",
+      "action": "Opens demo booking modal or navigates to /contact?intent=acd-demo"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark Auto Call Distribution (ACD)",
+          "description": "Intelligent auto call distribution with skill-based, round-robin, and priority routing. Real-time load balancing for contact centers and SMB teams.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/auto-call-distribution",
+          "category": "Cloud Telephony / Contact Center Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is skill-based routing in ACD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skill-based routing assigns incoming calls to agents who have the right expertise — such as language fluency, product knowledge, or certification level. SellSpark lets you tag agents with multiple skills and weight them so the best match always gets the call first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does SellSpark handle overflow when all agents are busy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You define overflow rules per queue: route to a backup team, play a callback offer, send to voicemail, or queue with position announcements. Rules trigger automatically based on wait time, queue depth, or business hours."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use round-robin and priority routing together?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. SellSpark supports round-robin for fair distribution, priority tiers for VIP callers, and longest-idle-agent logic — all combinable in a single routing profile so you can fine-tune behavior per queue."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does ACD work with remote and hybrid agents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Agents connect via browser softphone or mobile app. The ACD engine treats on-site and remote agents identically, routing based on availability and skills regardless of location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can we set up ACD for our contact center?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most teams go live within a day. Create queues, assign skills, and define routing rules in the SellSpark dashboard — no hardware or PBX configuration required."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "call-management",
+    "metaTitle": "Call Transfer, Routing & Recording Software – SellSpark",
+    "metaDescription": "Warm and blind transfers, ring groups, hunt groups, and automatic call recording with cloud storage. PCI-DSS and GDPR compliant for SMBs and enterprises.",
+    "hero": {
+      "headline": "From Call Chaos to Complete Control",
+      "subheadline": "Missed transfers, lost recordings, and tangled routing cost you customers every day. SellSpark gives your team one platform to transfer, route, and record every conversation — with full compliance built in.",
+      "visualDescription": "Split-screen hero: left panel labeled 'Before' shows a chaotic wireframe — missed call icons, a broken transfer arrow, and a red 'No Recording' badge. Right panel labeled 'With SellSpark' shows a clean call flow with warm transfer, ring group, and a green recording indicator. Animated transition draws attention from left to right."
+    },
+    "sections": [
+      {
+        "type": "capabilityMatrix",
+        "headline": "Every Call Management Tool in One Place",
+        "content": {
+          "capabilities": [
+            {
+              "icon": "arrows-right-left",
+              "title": "Warm Transfer",
+              "description": "Brief the next agent before handing off the customer. No repeated explanations, no frustration."
+            },
+            {
+              "icon": "arrow-right",
+              "title": "Blind Transfer",
+              "description": "Send calls instantly to another extension, department, or external number with a single click."
+            },
+            {
+              "icon": "users",
+              "title": "Ring Groups",
+              "description": "Ring multiple agents simultaneously or in sequence until someone answers — perfect for shared inboxes."
+            },
+            {
+              "icon": "magnifying-glass",
+              "title": "Hunt Groups",
+              "description": "Cascade calls through a prioritized list of agents so every call finds an available teammate."
+            },
+            {
+              "icon": "microphone",
+              "title": "Call Recording",
+              "description": "Automatically record inbound and outbound calls. Pause and resume for sensitive data segments."
+            },
+            {
+              "icon": "cloud",
+              "title": "Cloud Storage",
+              "description": "Secure, searchable recording archive with role-based access. Retrieve any call in seconds."
+            }
+          ]
+        }
+      },
+      {
+        "type": "complianceBanner",
+        "headline": "Compliance You Can Prove, Not Just Promise",
+        "content": {
+          "badges": [
+            "PCI-DSS",
+            "GDPR",
+            "SOC 2"
+          ],
+          "description": "SellSpark encrypts recordings in transit and at rest, supports consent prompts, and provides audit trails for regulators. Whether you handle payment data or EU customer records, your call operations stay compliant by default."
+        }
+      },
+      {
+        "type": "customerStory",
+        "headline": "Real Results from Real Teams",
+        "content": {
+          "quote": "Before SellSpark, our agents spent half their time re-explaining issues after blind transfers. With warm transfers and automatic recording, our 50-seat support team cut complaint resolution time by 40% in the first quarter.",
+          "attribution": "Operations Director, Mid-Size E-Commerce Brand",
+          "metric": "40% faster complaint resolution"
+        }
+      },
+      {
+        "type": "processSteps",
+        "headline": "Set Up Ring Groups in 3 Simple Steps",
+        "content": {
+          "steps": [
+            {
+              "number": 1,
+              "title": "Create Your Group",
+              "description": "Name your ring group — e.g., 'Sales Team' or 'After-Hours Support' — and choose simultaneous or sequential ringing."
+            },
+            {
+              "number": 2,
+              "title": "Add Agents",
+              "description": "Drag and drop team members into the group. Set ring timeout, overflow destination, and business hours."
+            },
+            {
+              "number": 3,
+              "title": "Go Live",
+              "description": "Assign the ring group to a phone number or IVR option. Calls start routing immediately — no IT ticket required."
+            }
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "How long does SellSpark retain call recordings?",
+        "answer": "Default retention is 90 days, configurable up to 7 years depending on your plan and compliance needs. You can set per-queue retention policies and export recordings at any time."
+      },
+      {
+        "question": "Are call recordings encrypted?",
+        "answer": "Yes. All recordings are encrypted in transit using TLS and at rest using AES-256. Access is controlled through role-based permissions and full audit logging."
+      },
+      {
+        "question": "What is the difference between a ring group and a hunt group?",
+        "answer": "A ring group rings multiple agents at once (or in a set order) until one answers. A hunt group tries agents one at a time in a defined priority sequence, moving to the next only if the previous agent does not pick up."
+      },
+      {
+        "question": "Can agents transfer calls to external numbers?",
+        "answer": "Yes. Agents can warm or blind transfer to any internal extension, ring group, or external phone number — including mobile phones for after-hours escalation."
+      },
+      {
+        "question": "Does call recording work for remote agents?",
+        "answer": "Recording applies to all calls regardless of whether agents use a desk phone, browser softphone, or mobile app. Compliance settings follow the agent, not the device."
+      }
+    ],
+    "cta": {
+      "text": "Unlock Smarter Call Flow – Book a Walkthrough",
+      "action": "Opens demo booking modal or navigates to /contact?intent=call-management-demo"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark Call Management",
+          "description": "Call transfer, routing, and recording software with warm and blind transfers, ring groups, hunt groups, and PCI-DSS and GDPR-compliant cloud storage.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/call-management",
+          "category": "Cloud Telephony / Call Recording Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long does SellSpark retain call recordings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Default retention is 90 days, configurable up to 7 years depending on your plan and compliance needs. You can set per-queue retention policies and export recordings at any time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are call recordings encrypted?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. All recordings are encrypted in transit using TLS and at rest using AES-256. Access is controlled through role-based permissions and full audit logging."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between a ring group and a hunt group?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A ring group rings multiple agents at once (or in a set order) until one answers. A hunt group tries agents one at a time in a defined priority sequence, moving to the next only if the previous agent does not pick up."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can agents transfer calls to external numbers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Agents can warm or blind transfer to any internal extension, ring group, or external phone number — including mobile phones for after-hours escalation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does call recording work for remote agents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Recording applies to all calls regardless of whether agents use a desk phone, browser softphone, or mobile app. Compliance settings follow the agent, not the device."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "call-masking",
+    "metaTitle": "Call Masking & Number Privacy for Businesses – SellSpark",
+    "metaDescription": "Protect customer and agent phone numbers with virtual number masking. Enable two-way communication without exposing personal info. Trust-first calling.",
+    "hero": {
+      "headline": "Keep Every Number Private. Keep Every Conversation Open.",
+      "subheadline": "SellSpark call masking replaces real phone numbers with virtual numbers on every call — so agents and customers can talk freely without ever sharing personal contact details.",
+      "visualDescription": "Large privacy shield icon centered above a call-flow mockup. Left side shows 'Agent: +91 98XXX' and 'Customer: +91 87XXX' with red visibility icons. Center shows a masked bridge number '+91 80XXX-MASK'. Right side shows both parties connected through the virtual number with green lock icons. Subtle pulse animation on the shield."
+    },
+    "sections": [
+      {
+        "type": "whyItMatters",
+        "headline": "Why Call Masking Matters",
+        "content": {
+          "risks": [
+            {
+              "icon": "exclamation-triangle",
+              "title": "Agent Harassment & Safety Risks",
+              "description": "When customers see an agent's personal mobile number, follow-up calls and messages can continue long after the interaction ends — putting your team at risk."
+            },
+            {
+              "icon": "shield-exclamation",
+              "title": "Customer Data Exposure",
+              "description": "Exposed phone numbers become a data breach waiting to happen. Leaked customer contacts damage trust and can trigger regulatory penalties."
+            },
+            {
+              "icon": "document-minus",
+              "title": "Compliance Gaps",
+              "description": "Regulations like GDPR and India's DPDP Act require minimizing personal data sharing. Unmasked numbers create audit trails you cannot defend."
+            }
+          ]
+        }
+      },
+      {
+        "type": "beforeAfter",
+        "headline": "See the Difference: Before and After Masking",
+        "content": {
+          "before": {
+            "label": "Without Masking",
+            "agentNumber": "+91 98765 43210",
+            "customerNumber": "+91 87654 32109",
+            "description": "Both parties see each other's real numbers. Personal details are exposed on every call and stored in call logs."
+          },
+          "after": {
+            "label": "With SellSpark Masking",
+            "maskedNumber": "+91 80 4567 8900",
+            "agentSees": "Customer via virtual number only",
+            "customerSees": "Business line only — agent identity protected",
+            "description": "All calls route through a virtual number. Neither side ever sees the other's real phone number."
+          }
+        }
+      },
+      {
+        "type": "benefitsList",
+        "headline": "Privacy That Pays Off",
+        "content": {
+          "benefits": [
+            {
+              "icon": "shield-check",
+              "title": "Regulatory Compliance",
+              "description": "Meet GDPR, DPDP, and industry-specific privacy requirements by defaulting to masked communication."
+            },
+            {
+              "icon": "user-shield",
+              "title": "Agent Safety",
+              "description": "Protect your team's personal numbers — especially critical for field agents, delivery partners, and remote staff."
+            },
+            {
+              "icon": "no-symbol",
+              "title": "Reduced Spam & Misuse",
+              "description": "Virtual numbers can be rotated or deactivated, cutting off unwanted follow-up calls instantly."
+            },
+            {
+              "icon": "heart",
+              "title": "Customer Trust",
+              "description": "Customers feel safer sharing their number when they know it will not be misused or sold."
+            }
+          ]
+        }
+      },
+      {
+        "type": "industrySegments",
+        "headline": "Trusted Across Industries",
+        "content": {
+          "segments": [
+            {
+              "icon": "heart-pulse",
+              "title": "Healthcare",
+              "description": "Enable doctor-patient calls and appointment reminders without exposing either party's personal number."
+            },
+            {
+              "icon": "truck",
+              "title": "Logistics & Delivery",
+              "description": "Connect drivers with customers for real-time coordination while keeping both numbers private."
+            },
+            {
+              "icon": "shopping-bag",
+              "title": "E-Commerce & Marketplaces",
+              "description": "Facilitate buyer-seller communication on your platform without off-platform leakage."
+            }
+          ]
+        }
+      },
+      {
+        "type": "trustBadges",
+        "headline": "Enterprise-Grade Security Standards",
+        "content": {
+          "badges": [
+            {
+              "name": "SOC 2 Type II",
+              "description": "Independently audited security controls"
+            },
+            {
+              "name": "GDPR Compliant",
+              "description": "Data minimization by design"
+            },
+            {
+              "name": "ISO 27001",
+              "description": "Information security management certified"
+            }
+          ],
+          "description": "SellSpark masking is built on infrastructure designed for regulated industries — not bolted on as an afterthought."
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does call masking work technically?",
+        "answer": "SellSpark assigns a virtual number that acts as a bridge. When the agent calls the customer (or vice versa), the platform connects both parties through the virtual number. Neither side's real number appears on caller ID or in call logs visible to the other party."
+      },
+      {
+        "question": "Can masked calls work both ways?",
+        "answer": "Yes. SellSpark supports two-way masking — customers can call back the virtual number and reach the same agent or department, without either party ever seeing a real phone number."
+      },
+      {
+        "question": "How quickly can I get a virtual number?",
+        "answer": "Virtual numbers are provisioned instantly for most Indian cities. Choose your area code, assign it to a team or campaign, and start masking within minutes."
+      },
+      {
+        "question": "Can I use different virtual numbers for different campaigns?",
+        "answer": "Absolutely. Assign unique virtual numbers per campaign, department, or city so you can track performance and rotate numbers without disrupting operations."
+      }
+    ],
+    "cta": {
+      "text": "Start Masking in 5 Minutes – Get Your Virtual Number",
+      "action": "Opens contact sales form or navigates to /contact?intent=call-masking&action=get-number"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark Call Masking",
+          "description": "Virtual number call masking for businesses. Protect agent and customer phone numbers with two-way masked communication and enterprise-grade privacy compliance.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/call-masking",
+          "category": "Cloud Telephony / Privacy Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does call masking work technically?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SellSpark assigns a virtual number that acts as a bridge. When the agent calls the customer (or vice versa), the platform connects both parties through the virtual number. Neither side's real number appears on caller ID or in call logs visible to the other party."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can masked calls work both ways?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. SellSpark supports two-way masking — customers can call back the virtual number and reach the same agent or department, without either party ever seeing a real phone number."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can I get a virtual number?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Virtual numbers are provisioned instantly for most Indian cities. Choose your area code, assign it to a team or campaign, and start masking within minutes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use different virtual numbers for different campaigns?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Assign unique virtual numbers per campaign, department, or city so you can track performance and rotate numbers without disrupting operations."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "dialer-suite",
+    "metaTitle": "Predictive, Progressive & Preview Dialer – SellSpark",
+    "metaDescription": "Maximize agent talk time with predictive, progressive, and preview dialers. Voicemail detection, DNC management, and real-time campaign analytics.",
+    "hero": {
+      "headline": "Stop Wasting Time Dialing. Start Closing.",
+      "subheadline": "Your reps should be talking, not listening to ring tones. SellSpark dialers automate outbound calling so agents spend up to 85% of their hour in live conversations — not staring at a phone.",
+      "visualDescription": "Interactive slider hero comparing two bar charts side by side. Left bar labeled 'Manual Dialing' shows 30 min talk time out of 60 min (muted colors). Right bar labeled 'SellSpark Predictive Dialer' shows 55 min talk time (vibrant gold). Slider handle lets user drag to compare; numbers animate on slide."
+    },
+    "sections": [
+      {
+        "type": "dialerTypeTabs",
+        "headline": "Choose the Dialer That Fits Your Campaign",
+        "content": {
+          "tabs": [
+            {
+              "id": "predictive",
+              "title": "Predictive Dialer",
+              "description": "The dialer places multiple calls per available agent based on real-time answer-rate algorithms. When a live person picks up, they are instantly connected to a free agent.",
+              "bestFor": "High-volume tele-sales, lead generation, and political outreach where speed is everything."
+            },
+            {
+              "id": "progressive",
+              "title": "Progressive Dialer",
+              "description": "Calls are dialed one at a time, automatically, as soon as an agent becomes available. No manual clicking — but only one call rings per agent at a time.",
+              "bestFor": "Collections, appointment setting, and compliance-sensitive campaigns that need controlled pacing."
+            },
+            {
+              "id": "preview",
+              "title": "Preview Dialer",
+              "description": "Agents see contact details and CRM history before the call is placed. They choose when to dial, with full context at their fingertips.",
+              "bestFor": "High-value B2B sales, account management, and complex deals where preparation beats speed."
+            }
+          ]
+        }
+      },
+      {
+        "type": "featureHighlights",
+        "headline": "Built for Campaign Managers Who Demand Control",
+        "content": {
+          "features": [
+            {
+              "icon": "voicemail",
+              "title": "Voicemail Drop",
+              "description": "Auto-detect answering machines and leave a pre-recorded message — then move to the next contact instantly."
+            },
+            {
+              "icon": "ban",
+              "title": "DNC Scrubbing",
+              "description": "Automatically filter Do-Not-Call lists before dialing. Stay compliant with TRAI regulations without manual list checks."
+            },
+            {
+              "icon": "gauge",
+              "title": "Intelligent Call Pacing",
+              "description": "Adjust dial ratios in real time based on connect rates, agent availability, and campaign goals."
+            },
+            {
+              "icon": "chart-bar",
+              "title": "Real-Time Dashboards",
+              "description": "Monitor live connect rates, talk time, conversions, and agent performance from a single campaign view."
+            }
+          ]
+        }
+      },
+      {
+        "type": "useCaseCards",
+        "headline": "Dialer Use Cases That Drive Revenue",
+        "content": {
+          "cards": [
+            {
+              "title": "Tele-Sales & Lead Gen",
+              "description": "Run high-velocity outbound campaigns with predictive dialing. Agents talk to 3× more prospects per hour than manual dialing.",
+              "metric": "3× more conversations per hour"
+            },
+            {
+              "title": "Collections & Recovery",
+              "description": "Use progressive dialing for compliant, paced outreach. Preview mode lets agents review account history before each call.",
+              "metric": "28% higher recovery rates"
+            },
+            {
+              "title": "Customer Surveys & NPS",
+              "description": "Deploy preview dialers for feedback campaigns where context matters. Auto-log responses to your CRM.",
+              "metric": "2× survey completion rate"
+            }
+          ]
+        }
+      },
+      {
+        "type": "roiCalculator",
+        "headline": "See the Math on Your Outbound ROI",
+        "content": {
+          "description": "Plug in your team size, average talk time, and conversion rate to estimate how much revenue a SellSpark dialer unlocks.",
+          "placeholderFields": [
+            {
+              "label": "Number of agents",
+              "default": 10
+            },
+            {
+              "label": "Current talk time per hour (mins)",
+              "default": 20
+            },
+            {
+              "label": "Average deal value (₹)",
+              "default": 5000
+            },
+            {
+              "label": "Conversion rate (%)",
+              "default": 5
+            }
+          ],
+          "resultLabel": "Estimated additional monthly revenue",
+          "note": "Interactive calculator component — values are illustrative. Book a demo for a custom ROI analysis."
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is an acceptable abandoned call rate for predictive dialing?",
+        "answer": "TRAI guidelines require abandoned call rates below 5% for telemarketing. SellSpark's pacing engine automatically adjusts dial ratios to keep abandonment within compliant limits while maximizing agent utilization."
+      },
+      {
+        "question": "How does voicemail detection work?",
+        "answer": "SellSpark analyzes answer patterns — including time-to-answer and audio signatures — to distinguish live answers from voicemail. Detected voicemails trigger an automatic pre-recorded drop or skip, depending on your campaign settings."
+      },
+      {
+        "question": "Can I import contact lists from my CRM?",
+        "answer": "Yes. Import CSV files or sync directly from Salesforce, HubSpot, Zoho, and other CRMs. Lists auto-refresh so agents always dial the latest contacts."
+      },
+      {
+        "question": "Is predictive dialing legal in India?",
+        "answer": "Yes, when configured within TRAI regulations including DNC compliance, abandoned call rate limits, and approved calling hours. SellSpark enforces these guardrails at the platform level."
+      }
+    ],
+    "cta": {
+      "text": "Power Up Your Outbound – Try the Dialer",
+      "action": "Opens demo booking modal or navigates to /contact?intent=dialer-demo"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark Dialer Suite",
+          "description": "Predictive, progressive, and preview outbound dialers with voicemail detection, DNC management, and real-time campaign analytics for sales teams.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/dialer-suite",
+          "category": "Cloud Telephony / Outbound Dialer Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is an acceptable abandoned call rate for predictive dialing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TRAI guidelines require abandoned call rates below 5% for telemarketing. SellSpark's pacing engine automatically adjusts dial ratios to keep abandonment within compliant limits while maximizing agent utilization."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does voicemail detection work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SellSpark analyzes answer patterns — including time-to-answer and audio signatures — to distinguish live answers from voicemail. Detected voicemails trigger an automatic pre-recorded drop or skip, depending on your campaign settings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I import contact lists from my CRM?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Import CSV files or sync directly from Salesforce, HubSpot, Zoho, and other CRMs. Lists auto-refresh so agents always dial the latest contacts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is predictive dialing legal in India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when configured within TRAI regulations including DNC compliance, abandoned call rate limits, and approved calling hours. SellSpark enforces these guardrails at the platform level."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "crm-integrations",
+    "metaTitle": "CRM Integration Suite for Call Centers – SellSpark",
+    "metaDescription": "Native integrations with Salesforce, HubSpot, Zoho, and 200+ tools. Bi-directional sync, screen-pops, and auto call logging. Connect your whole stack.",
+    "hero": {
+      "headline": "Your CRM and Phone System, Finally in Sync",
+      "subheadline": "Stop toggling between tabs. SellSpark connects your contact center to 200+ business tools — so every call is logged, every lead is enriched, and every agent has full context before they say hello.",
+      "visualDescription": "Searchable grid of 40+ partner logos (Salesforce, HubSpot, Zoho, Pipedrive, Freshdesk, etc.) with a search bar at top. Typing filters logos in real time. Selected logo pulses with a gold border and a 'Connected' badge animates in."
+    },
+    "sections": [
+      {
+        "type": "oneClickConnect",
+        "headline": "One-Click Connect in 3 Steps",
+        "content": {
+          "steps": [
+            {
+              "number": 1,
+              "title": "Choose Your CRM",
+              "description": "Search SellSpark's integration directory and select your CRM or helpdesk platform from 200+ supported apps."
+            },
+            {
+              "number": 2,
+              "title": "Authorize Access",
+              "description": "Click 'Connect' and sign in with your CRM credentials. SellSpark requests only the permissions needed for call logging and screen-pops."
+            },
+            {
+              "number": 3,
+              "title": "Start Calling Smarter",
+              "description": "Agents see screen-pops on incoming calls, click-to-dial from any contact record, and every conversation is auto-logged — zero manual entry."
+            }
+          ]
+        }
+      },
+      {
+        "type": "integrationBenefitCards",
+        "headline": "What Changes When Your Stack Is Connected",
+        "content": {
+          "cards": [
+            {
+              "icon": "window",
+              "title": "Screen-Pop on Incoming Calls",
+              "description": "When a call arrives, the matching CRM record opens automatically — name, history, open tickets, and deal stage right on screen."
+            },
+            {
+              "icon": "phone-arrow-up-right",
+              "title": "Click-to-Call from CRM",
+              "description": "Agents click any phone number inside your CRM to dial instantly through SellSpark. No copy-paste, no misdials."
+            },
+            {
+              "icon": "clipboard-document",
+              "title": "Automatic Call Logging",
+              "description": "Every inbound and outbound call is logged to the correct contact or deal with duration, recording link, and disposition — automatically."
+            },
+            {
+              "icon": "arrows-sync",
+              "title": "Bi-Directional Lead Sync",
+              "description": "New leads created in either system sync to the other in real time. Campaign lists stay fresh without CSV exports."
+            }
+          ]
+        }
+      },
+      {
+        "type": "screenPopDemo",
+        "headline": "See What Agents See on Every Call",
+        "content": {
+          "description": "When a customer calls, SellSpark matches the number to your CRM and pops the full contact profile before the agent picks up.",
+          "previewElements": [
+            "Contact name and company",
+            "Last interaction date and notes",
+            "Open support tickets or deal stage",
+            "One-click access to call history and recordings"
+          ],
+          "visualDescription": "Screenshot-style mockup of a CRM interface with an incoming call notification overlay. Left panel shows caller details; right panel shows SellSpark softphone with 'Answer' button glowing."
+        }
+      },
+      {
+        "type": "supportedCrmsAccordion",
+        "headline": "Supported CRMs and Platforms",
+        "content": {
+          "categories": [
+            {
+              "title": "Sales CRMs",
+              "tools": [
+                "Salesforce",
+                "HubSpot",
+                "Zoho CRM",
+                "Pipedrive",
+                "Freshsales",
+                "LeadSquared",
+                "Kylas"
+              ]
+            },
+            {
+              "title": "Support & Helpdesk",
+              "tools": [
+                "Freshdesk",
+                "Zendesk",
+                "Zoho Desk",
+                "Intercom",
+                "Kayako",
+                "Kapture"
+              ]
+            },
+            {
+              "title": "Marketing & Automation",
+              "tools": [
+                "Mailchimp",
+                "ActiveCampaign",
+                "MoEngage",
+                "WebEngage",
+                "CleverTap"
+              ]
+            },
+            {
+              "title": "Custom & Enterprise",
+              "tools": [
+                "REST API",
+                "Webhooks",
+                "Zapier",
+                "Make (Integromat)",
+                "Custom middleware"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "apiMention",
+        "headline": "Build Custom Integrations with Our API",
+        "content": {
+          "description": "Need something beyond plug-and-play? SellSpark's REST API and webhooks let your developers connect any internal system — ERP, data warehouse, or custom app.",
+          "features": [
+            "RESTful API with full call control",
+            "Real-time webhooks for call events",
+            "SDK documentation and sandbox environment"
+          ],
+          "ctaText": "View API documentation",
+          "ctaLink": "/developers"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "How long does it take to integrate SellSpark with my CRM?",
+        "answer": "Native integrations with Salesforce, HubSpot, and Zoho take under 10 minutes. Search for your CRM in the directory, authorize access, and mapping is automatic for most standard fields."
+      },
+      {
+        "question": "Does SellSpark support bi-directional sync?",
+        "answer": "Yes. Contact updates, new leads, and call dispositions sync in both directions. Changes in your CRM reflect in SellSpark and vice versa in near real time."
+      },
+      {
+        "question": "Can I customize which CRM fields appear on screen-pop?",
+        "answer": "Absolutely. Configure screen-pop layouts per team or campaign — show deal value for sales, ticket priority for support, or any custom field from your CRM."
+      },
+      {
+        "question": "What if my CRM is not in the directory?",
+        "answer": "Use SellSpark's REST API or webhook integrations to connect any system. Our solutions team can also build custom connectors for enterprise deployments."
+      }
+    ],
+    "cta": {
+      "text": "Connect Your Stack – See Integrations Live",
+      "action": "Opens demo booking modal or navigates to /contact?intent=crm-integrations-demo"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark CRM Integrations",
+          "description": "CRM integration suite for call centers with native Salesforce, HubSpot, and Zoho connectors. Screen-pops, click-to-call, auto call logging, and bi-directional sync.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/crm-integrations",
+          "category": "Cloud Telephony / CRM Integration Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long does it take to integrate SellSpark with my CRM?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Native integrations with Salesforce, HubSpot, and Zoho take under 10 minutes. Search for your CRM in the directory, authorize access, and mapping is automatic for most standard fields."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does SellSpark support bi-directional sync?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Contact updates, new leads, and call dispositions sync in both directions. Changes in your CRM reflect in SellSpark and vice versa in near real time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I customize which CRM fields appear on screen-pop?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Configure screen-pop layouts per team or campaign — show deal value for sales, ticket priority for support, or any custom field from your CRM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if my CRM is not in the directory?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use SellSpark's REST API or webhook integrations to connect any system. Our solutions team can also build custom connectors for enterprise deployments."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bulk-sms-voice-broadcasts",
+    "metaTitle": "Bulk SMS & Voice Broadcasting for Campaigns – SellSpark",
+    "metaDescription": "Send millions of SMS or voice messages instantly. DLT-compliant, smart scheduling, personalization, and real-time delivery analytics. Scale your outreach.",
+    "hero": {
+      "headline": "Reach Thousands in Seconds. Not Days.",
+      "subheadline": "Whether it is a flash sale alert, an OTP, or a voice reminder — SellSpark lets you build, schedule, and blast campaigns to millions of contacts with delivery tracking you can trust.",
+      "visualDescription": "Broadcast builder mockup: top section shows a message composer with character count and template selector. Middle section shows audience picker with segment tags ('VIP Customers', 'Mumbai Region', '12,450 contacts'). Bottom shows a prominent 'Send Now' button with a scheduled-send toggle. Subtle send animation with message icons flying outward."
+    },
+    "sections": [
+      {
+        "type": "campaignTypes",
+        "headline": "One Platform, Every Channel",
+        "content": {
+          "types": [
+            {
+              "icon": "chat-bubble",
+              "title": "Bulk SMS",
+              "description": "Send transactional and promotional SMS at scale. Unicode support for regional languages, long SMS concatenation, and DLT-registered templates.",
+              "tag": "Most popular"
+            },
+            {
+              "icon": "speaker-wave",
+              "title": "Voice Broadcast (OBD)",
+              "description": "Deliver pre-recorded voice messages to thousands of phones simultaneously. Ideal for reminders, alerts, and IVR-style surveys.",
+              "tag": "High engagement"
+            },
+            {
+              "icon": "device-phone-mobile",
+              "title": "WhatsApp Business",
+              "description": "Send approved template messages via WhatsApp Business API. Rich media, buttons, and read receipts for modern customer outreach.",
+              "tag": "Coming soon"
+            }
+          ]
+        }
+      },
+      {
+        "type": "featureHighlights",
+        "headline": "Campaign Tools That Scale With You",
+        "content": {
+          "features": [
+            {
+              "icon": "shield-check",
+              "title": "DLT Compliance Built In",
+              "description": "Pre-registered templates, entity IDs, and header management. Send compliant SMS in India without navigating TRAI bureaucracy yourself."
+            },
+            {
+              "icon": "sparkles",
+              "title": "Dynamic Personalization",
+              "description": "Insert contact name, order ID, amount due, or any custom field into every message. Each recipient gets a personal touch at scale."
+            },
+            {
+              "icon": "calendar",
+              "title": "Smart Scheduling",
+              "description": "Schedule campaigns for optimal delivery windows. Set recurring broadcasts for payment reminders, renewals, or weekly promotions."
+            },
+            {
+              "icon": "chart-pie",
+              "title": "Real-Time Delivery Reports",
+              "description": "Track sent, delivered, failed, and clicked in a live dashboard. Export reports or pipe data to your analytics stack."
+            },
+            {
+              "icon": "arrow-path",
+              "title": "Automatic Fallback",
+              "description": "If SMS delivery fails, automatically retry via voice or alternate route — so critical messages always get through."
+            }
+          ]
+        }
+      },
+      {
+        "type": "useCaseGallery",
+        "headline": "Campaigns for Every Business Goal",
+        "content": {
+          "useCases": [
+            {
+              "title": "Promotions & Flash Sales",
+              "description": "Blast time-limited offers to segmented customer lists. Track click-through rates with short links.",
+              "channel": "SMS"
+            },
+            {
+              "title": "OTP & Transactional Alerts",
+              "description": "Deliver login codes, payment confirmations, and shipping updates with sub-second latency and 99.9% delivery SLA.",
+              "channel": "SMS"
+            },
+            {
+              "title": "Service Alerts & Reminders",
+              "description": "Send appointment reminders, payment due notices, and maintenance alerts via SMS or voice.",
+              "channel": "SMS + Voice"
+            },
+            {
+              "title": "Political & Public Campaigns",
+              "description": "Reach constituents with voice broadcasts and SMS at scale, with full DLT compliance and delivery audit trails.",
+              "channel": "Voice + SMS"
+            }
+          ]
+        }
+      },
+      {
+        "type": "analyticsPreview",
+        "headline": "Know Exactly What Landed",
+        "content": {
+          "description": "Real-time campaign analytics show delivery performance the moment messages go out.",
+          "chartDescription": "Mock dashboard with a donut chart showing delivery breakdown (Delivered 94.2%, Failed 3.1%, Pending 2.7%) and a line graph of sends over time. Summary cards: Total Sent, Delivery Rate, Avg. Delivery Time.",
+          "metrics": [
+            {
+              "label": "Delivery Rate",
+              "value": "94.2%"
+            },
+            {
+              "label": "Avg. Delivery Time",
+              "value": "1.8s"
+            },
+            {
+              "label": "Messages Sent Today",
+              "value": "2.4M"
+            }
+          ]
+        }
+      },
+      {
+        "type": "apiMention",
+        "headline": "Developer-Friendly Messaging API",
+        "content": {
+          "description": "Trigger SMS and voice broadcasts programmatically from your app, backend, or workflow automation.",
+          "features": [
+            "REST API for single and bulk sends",
+            "Webhook callbacks for delivery status",
+            "SDKs for Node.js, Python, and PHP"
+          ],
+          "ctaText": "Explore Messaging API",
+          "ctaLink": "/developers/messaging"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is SellSpark DLT compliant for SMS in India?",
+        "answer": "Yes. SellSpark is a registered telemarketer with full DLT integration. We manage entity registration, template approval, and header mapping so your campaigns comply with TRAI regulations out of the box."
+      },
+      {
+        "question": "How many messages can I send at once?",
+        "answer": "SellSpark handles millions of messages per campaign with no throttling on enterprise plans. Our infrastructure auto-scales during peak sends like flash sales or election campaigns."
+      },
+      {
+        "question": "Can I personalize messages with customer data?",
+        "answer": "Yes. Upload a CSV or sync from your CRM, then map fields like name, order ID, or amount to template variables. Each message is rendered uniquely per recipient."
+      },
+      {
+        "question": "What happens if an SMS fails to deliver?",
+        "answer": "Failed messages are retried automatically based on your fallback rules. You can configure alternate routes, voice fallback, or webhook notifications for failed deliveries."
+      },
+      {
+        "question": "Do you support regional languages in SMS?",
+        "answer": "Yes. Full Unicode support for Hindi, Tamil, Telugu, Bengali, and all major Indian languages. Long SMS concatenation handles messages over 160 characters seamlessly."
+      }
+    ],
+    "cta": {
+      "text": "Launch Your First Blast – Start Free",
+      "action": "Opens contact sales form or navigates to /contact?intent=messaging&action=start-free"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Product",
+          "name": "SellSpark Bulk SMS & Voice Broadcasts",
+          "description": "Bulk SMS and voice broadcasting platform with DLT compliance, dynamic personalization, smart scheduling, and real-time delivery analytics for marketing and transactional campaigns.",
+          "brand": {
+            "@type": "Brand",
+            "name": "SellSpark"
+          },
+          "url": "https://sellspark.in/features/bulk-sms-voice-broadcasts",
+          "category": "Cloud Telephony / Bulk Messaging Software"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is SellSpark DLT compliant for SMS in India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. SellSpark is a registered telemarketer with full DLT integration. We manage entity registration, template approval, and header mapping so your campaigns comply with TRAI regulations out of the box."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many messages can I send at once?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SellSpark handles millions of messages per campaign with no throttling on enterprise plans. Our infrastructure auto-scales during peak sends like flash sales or election campaigns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I personalize messages with customer data?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Upload a CSV or sync from your CRM, then map fields like name, order ID, or amount to template variables. Each message is rendered uniquely per recipient."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if an SMS fails to deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Failed messages are retried automatically based on your fallback rules. You can configure alternate routes, voice fallback, or webhook notifications for failed deliveries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you support regional languages in SMS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Full Unicode support for Hindi, Tamil, Telugu, Bengali, and all major Indian languages. Long SMS concatenation handles messages over 160 characters seamlessly."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
