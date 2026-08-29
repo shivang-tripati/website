@@ -59,7 +59,7 @@ function IntegrationLogo({
         className="w-14 h-14 rounded-xl flex items-center justify-center text-lg font-bold transition-all duration-500"
         style={{
           backgroundColor: isHovered ? `${logo.color}20` : "rgba(42,42,42,0.5)",
-          color: isHovered ? logo.color : "#9a9694",
+          color: isHovered ? logo.color : "#ece8e6",
         }}
       >
         {logo.name.charAt(0)}
@@ -90,7 +90,7 @@ export function IntegrationsSection() {
             Connects to <span className="gold-gradient-text">Everything</span> You Use
           </h2>
           <p className="text-body max-w-2xl mx-auto text-lg">
-            Native CRM integrations, powerful APIs, and embeddable widgets — Sovereign fits into your existing tech stack, not the other way around.
+            Native CRM integrations, powerful APIs, and embeddable widgets — ACS fits into your existing tech stack, not the other way around.
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export function IntegrationsSection() {
           >
             <h3 className="text-headline-md mb-2">CRM Integrations</h3>
             <p className="text-body mb-8">
-              One-click setup. Bi-directional sync. Full context on every call.
+              API driven integrations. Full context on every call.
             </p>
 
             <div className="grid grid-cols-4 gap-3">
@@ -160,7 +160,7 @@ export function IntegrationsSection() {
               </div>
               <pre className="text-sm text-on-surface-variant leading-relaxed overflow-x-auto">
                 <code>{`// Send a standard HTTP POST request to trigger a call
-const response = await fetch('https://api.sovereign.com/v1/calls', {
+const response = await fetch('https://api.acs.com/v1/calls', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY',

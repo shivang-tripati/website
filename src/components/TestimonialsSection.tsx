@@ -6,7 +6,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Sovereign didn't just replace our communication stack—it elevated our entire customer experience. The unified timeline alone saved our team 12 hours per week.",
+      "ACS didn't just replace our communication stack—it elevated our entire customer experience. The unified timeline alone saved our team 12 hours per week.",
     name: "Sarah Chen",
     title: "VP of Customer Success",
     company: "Meridian Health",
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     quote:
-      "We evaluated 15 platforms before choosing Sovereign. Nothing else came close to the depth of automation and the premium feel of the interface.",
+      "We evaluated 15 platforms before choosing ACS. Nothing else came close to the depth of automation and the premium feel of the interface.",
     name: "Elena Rossi",
     title: "CTO",
     company: "Vantage Finance",
@@ -112,11 +112,10 @@ export function TestimonialsSection() {
               <button
                 key={i}
                 onClick={() => setActiveIndex(i)}
-                className={`h-2 rounded-full transition-all duration-500 ${
-                  i === activeIndex
+                className={`h-2 rounded-full transition-all duration-500 ${i === activeIndex
                     ? "w-8 bg-primary"
                     : "w-2 bg-surface-high hover:bg-surface-highest"
-                }`}
+                  }`}
                 aria-label={`View testimonial ${i + 1}`}
               />
             ))}

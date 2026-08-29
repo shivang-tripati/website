@@ -2,12 +2,14 @@
 
 import { useRef, useState, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 const products = [
   {
     id: "contact-center",
     label: "FLAGSHIP",
     title: "Contact Center",
+    href: "/products/contact-center",
     description:
       "A full-stack cloud contact center with omnichannel routing and real-time monitoring. Handle voice, chat, email, and social from one unified agent desktop.",
     features: [
@@ -27,6 +29,7 @@ const products = [
     id: "api-connect",
     label: "DEVELOPER",
     title: "API Connect",
+    href: "/products/api-connect",
     description:
       "Programmable communication APIs for voice, SMS, and WhatsApp. Build custom workflows, embed calling into your apps, and automate customer engagement at scale with RESTful endpoints.",
     features: [
@@ -44,6 +47,7 @@ const products = [
     id: "click-to-call",
     label: "ENGAGEMENT",
     title: "Click-to-Call",
+    href: "/products/click-to-call",
     description:
       "Embed one-click calling into your website, CRM, or app. Eliminate manual dialing, connect customers instantly, and capture every conversation with automatic logging and recording.",
     features: [
@@ -63,6 +67,7 @@ const products = [
     id: "dialers-campaigns",
     label: "OUTBOUND",
     title: "Dialers & Campaigns",
+    href: "/products/dialers-campaigns",
     description:
       "Predictive, progressive, and preview dialers that maximize agent talk time. Design multi-touch outbound campaigns across voice and SMS with intelligent pacing and compliance controls.",
     features: [
@@ -90,75 +95,207 @@ function ProductCard({
   onClick: () => void;
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [spotlightPos, setSpotlightPos] = useState({ x: 0, y: 0 });
+
+  const [spotlightPos, setSpotlightPos] = useState({
+    x: 0,
+    y: 0,
+  });
+
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    setSpotlightPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-  }, []);
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (!cardRef.current) return;
+
+      const rect = cardRef.current.getBoundingClientRect();
+
+      setSpotlightPos({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      });
+    },
+    []
+  );
 
   return (
-    <motion.div
+    <motion.article
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onFocus={() => setIsHovered(true)}
+      onBlur={() => setIsHovered(false)}
       onClick={onClick}
-      className={`relative overflow-hidden rounded-2xl p-8 cursor-pointer transition-all duration-500 group ${
-        isActive
-          ? "bg-surface-low ring-1 ring-primary/20"
-          : "bg-surface-low/50 hover:bg-surface-low"
-      }`}
+      className={`
+        group relative overflow-hidden rounded-2xl
+        border
+        p-8
+        transition-all duration-500
+        ${isActive
+          ? "border-primary/20 bg-surface-low"
+          : "border-border/50 bg-surface-low/50 hover:border-primary/20 hover:bg-surface-low"
+        }
+      `}
     >
       {/* Spotlight */}
       <div
-        className="absolute inset-0 pointer-events-none transition-opacity duration-500"
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 transition-opacity duration-500"
         style={{
           opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(400px circle at ${spotlightPos.x}px ${spotlightPos.y}px, rgba(242, 202, 80, 0.05), transparent 60%)`,
+          background: `
+            radial-gradient(
+              400px circle at ${spotlightPos.x}px ${spotlightPos.y}px,
+              rgba(242, 202, 80, 0.06),
+              transparent 60%
+            )
+          `,
         }}
+      />
+
+      {/* Subtle top accent */}
+      <div
+        aria-hidden="true"
+        className="
+          absolute inset-x-0 top-0 h-px
+          bg-gradient-to-r
+          from-transparent
+          via-primary/40
+          to-transparent
+          opacity-0
+          transition-opacity duration-500
+          group-hover:opacity-100
+        "
       />
 
       <div className="relative z-10">
         {/* Icon */}
         <div
-          className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient} flex items-center justify-center mb-6 text-primary transition-transform duration-500 group-hover:scale-110`}
+          className={`
+            mb-6
+            flex h-14 w-14
+            items-center justify-center
+            rounded-xl
+            bg-gradient-to-br ${product.gradient}
+            text-primary
+            transition-transform duration-500
+            group-hover:scale-105
+          `}
         >
           {product.icon}
         </div>
 
-        {/* Label */}
-        <span className="text-label text-primary/60 block mb-2">{product.label}</span>
+        {/* Product category */}
+        <span className="text-label mb-2 block text-primary/70">
+          {product.label}
+        </span>
 
         {/* Title */}
-        <h3 className="text-headline-md text-on-surface mb-3">{product.title}</h3>
+        <h3 className="text-headline-md mb-3 text-on-surface">
+          {product.title}
+        </h3>
 
         {/* Description */}
-        <p className="text-body text-sm leading-relaxed mb-6">{product.description}</p>
+        <p className="text-body mb-6 text-sm leading-relaxed">
+          {product.description}
+        </p>
 
-        {/* Features list */}
-        <ul className="space-y-2.5">
-          {product.features.map((feature, i) => (
-            <li key={i} className="flex items-center gap-2.5 text-sm text-on-surface-variant">
-              <svg className="w-4 h-4 text-primary/70 shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+        {/* Features */}
+        <ul
+          aria-label={`${product.title} features`}
+          className="space-y-2.5"
+        >
+          {product.features.map((feature) => (
+            <li
+              key={feature}
+              className="
+                flex
+                items-center
+                gap-2.5
+                text-sm
+                text-on-surface-variant
+              "
+            >
+              <svg
+                className="h-4 w-4 shrink-0 text-primary/70"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
               </svg>
-              {feature}
+
+              <span>{feature}</span>
             </li>
           ))}
         </ul>
 
-        {/* Arrow */}
-        <div className="mt-6 flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 translate-x-[-10px] group-hover:translate-x-0 transition-all duration-500">
-          <span className="text-sm font-medium">Explore {product.title}</span>
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        {/* Product navigation */}
+        <Link
+          href={product.href}
+          onClick={(e) => e.stopPropagation()}
+          aria-label={`Explore ${product.title}`}
+          className="
+            mt-7
+            inline-flex
+            items-center
+            gap-2
+            rounded-md
+            py-1
+            text-sm
+            font-semibold
+            text-primary
+
+            opacity-100
+            translate-x-0
+
+            md:opacity-0
+            md:-translate-x-2
+            md:group-hover:translate-x-0
+            md:group-hover:opacity-100
+
+            transition-all
+            duration-500
+
+            hover:text-primary
+            focus-visible:opacity-100
+            focus-visible:translate-x-0
+            focus-visible:outline-none
+            focus-visible:ring-2
+            focus-visible:ring-primary
+            focus-visible:ring-offset-2
+            focus-visible:ring-offset-background
+          "
+        >
+          <span>Explore {product.title}</span>
+
+          <svg
+            className="
+              h-4 w-4
+              transition-transform duration-300
+              group-hover:translate-x-1
+            "
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
           </svg>
-        </div>
+        </Link>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }
 

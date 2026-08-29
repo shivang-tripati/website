@@ -111,7 +111,7 @@ export function UseCasesSection() {
             Built for Every <span className="gold-gradient-text">Revenue Team</span>
           </h2>
           <p className="text-body max-w-2xl mx-auto text-lg">
-            Whether you&apos;re closing deals, resolving tickets, or driving campaigns — Sovereign adapts to your workflow.
+            Whether you&apos;re closing deals, resolving tickets, or driving campaigns — ACS adapts to your workflow.
           </p>
         </motion.div>
 
@@ -126,11 +126,10 @@ export function UseCasesSection() {
             <button
               key={uc.id}
               onClick={() => setActiveTab(i)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeTab === i
+              className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === i
                   ? "bg-surface-low text-on-surface ring-1 ring-ghost-gold"
                   : "text-on-surface-variant hover:text-on-surface hover:bg-surface-low/50"
-              }`}
+                }`}
             >
               <span className={activeTab === i ? colorMapLight[uc.color] : ""}>{uc.icon}</span>
               {uc.label}

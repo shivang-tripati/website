@@ -2,6 +2,12 @@
 
 import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import {
+  MessageCircle,   // WhatsApp (chat bubble style)
+  Mail,            // Email
+  MessageSquare,   // SMS
+  Phone            // Voice
+} from "lucide-react";
 
 const steps = [
   {
@@ -21,7 +27,12 @@ const steps = [
               viewport={{ once: true }}
               className="w-24 h-24 rounded-2xl bg-surface-high flex flex-col items-center justify-center gap-2 hover:bg-surface-highest transition-colors duration-500"
             >
-              <div className="w-8 h-8 rounded-lg gold-gradient opacity-80" />
+              <div className="w-16 h-16 rounded-lg gold-gradient opacity-80 flex items-center justify-center">
+                {channel === "WhatsApp" && <MessageCircle className="w-8 h-8 text-[#25D366]" />}
+                {channel === "Email" && <Mail className="w-8 h-8 text-[#D44638]" />}
+                {channel === "SMS" && <MessageSquare className="w-8 h-8 text-[#0088CC]" />}
+                {channel === "Voice" && <Phone className="w-8 h-8 text-[#9C27B0]" />}
+              </div>
               <span className="text-xs text-on-surface-variant font-medium">{channel}</span>
             </motion.div>
           ))}
@@ -31,7 +42,7 @@ const steps = [
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-            className="w-44 h-44 rounded-full border border-dashed border-ghost-gold"
+            className="w-56 h-56 rounded-full border border-dashed border-ghost-gold"
           />
         </div>
       </div>
@@ -125,7 +136,7 @@ export function ProcessSection() {
           </span>
           <h2 className="text-headline-lg max-w-2xl">
             Three Steps to{" "}
-            <span className="gold-gradient-text">Sovereign</span> Communication
+            <span className="gold-gradient-text">ACS</span> Communication
           </h2>
         </motion.div>
 
@@ -165,13 +176,12 @@ function ProcessStep({
         ease: [0.22, 1, 0.36, 1],
         delay: 0.1,
       }}
-      className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center md:py-20 ${
-        index % 2 === 1 ? "md:direction-rtl" : ""
-      }`}
+      className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center md:py-20 ${index % 2 === 1 ? "md:direction-rtl" : ""
+        }`}
     >
       {/* Text side */}
       <div className={index % 2 === 1 ? "md:order-2" : ""}>
-        <span className="text-6xl font-black gold-gradient-text opacity-30 block mb-4">
+        <span className="text-6xl font-black gold-gradient-text opacity-90 block mb-4">
           {step.number}
         </span>
         <h3 className="text-headline-lg mb-6">{step.title}</h3>
@@ -181,9 +191,8 @@ function ProcessStep({
       {/* Visual side */}
       <motion.div
         style={{ y }}
-        className={`h-72 md:h-80 rounded-2xl bg-surface-low overflow-hidden ${
-          index % 2 === 1 ? "md:order-1" : ""
-        }`}
+        className={`h-72 md:h-80 rounded-2xl bg-surface-low overflow-hidden ${index % 2 === 1 ? "md:order-1" : ""
+          }`}
       >
         {step.visual}
       </motion.div>

@@ -4,14 +4,16 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const logos = [
-  { name: "Stripe", width: "w-24" },
-  { name: "Notion", width: "w-20" },
-  { name: "Slack", width: "w-20" },
-  { name: "Figma", width: "w-16" },
-  { name: "Linear", width: "w-20" },
-  { name: "Vercel", width: "w-20" },
-  { name: "Supabase", width: "w-24" },
-  { name: "Railway", width: "w-20" },
+  { name: "CredMart", width: "w-24" },
+  { name: "DE", width: "w-20" },
+  { name: "Sellspark", width: "w-20" },
+  { name: "Probity", width: "w-20" },
+  { name: "Mahavira Finelease", width: "w-44" },
+  { name: "Promise Myself", width: "w-20" },
+  { name: "BeanBliss", width: "w-20" },
+  { name: "Textaa", width: "w-24" },
+  { name: "GroupGenic", width: "w-20" },
+  { name: "Mantri", width: "w-20" },
 ];
 
 export function LogoCloud() {
@@ -27,7 +29,7 @@ export function LogoCloud() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="text-label text-center mb-12"
         >
-          Powering the world&apos;s most ambitious teams
+          Powering the india&apos;s most ambitious teams
         </motion.p>
 
         <motion.div

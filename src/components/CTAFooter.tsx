@@ -2,8 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { MagneticButton } from "./Navbar";
-import { SovereignBackground } from "./BackgroundEffects";
+import { MagneticButton } from "./magic-button";
+import { ACSBackground } from "./BackgroundEffects";
+import Link from "next/link";
 
 export function CTASection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,7 +13,7 @@ export function CTASection() {
   return (
     <section ref={ref} className="py-32 relative overflow-hidden">
       {/* Cinematic background */}
-      <SovereignBackground variant="section" />
+      <ACSBackground variant="section" />
       <div className="absolute inset-0 grid-texture opacity-30" />
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
@@ -27,10 +28,10 @@ export function CTASection() {
           <h2 className="text-display mb-8">
             Your Team Deserves
             <br />
-            <span className="gold-gradient-text">Sovereign</span> Communication.
+            <span className="gold-gradient-text">Agilis</span> Communication.
           </h2>
           <p className="text-body text-lg max-w-2xl mx-auto mb-12">
-            Join 2,400+ teams that replaced 5 tools with one sovereign platform.
+            Join 2,400+ teams that replaced 5 tools with one ACS platform.
             Start your free 14-day trial—no credit card required.
           </p>
 
@@ -74,15 +75,34 @@ export function CTASection() {
   );
 }
 
+interface FooterLink {
+  name: string;
+  href: string;
+}
+
 export function Footer() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
-  const footerLinks = {
-    Product: ["Features", "Pricing", "Integrations", "Changelog", "API Docs"],
-    Company: ["About", "Careers", "Blog", "Press Kit", "Contact"],
-    Resources: ["Documentation", "Community", "Status", "Security", "GDPR"],
-    Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+  const footerLinks: Record<string, FooterLink[]> = {
+    Product: [
+      { name: "Products", href: "#products" },
+      { name: "Features", href: "#features" },
+      { name: "Services", href: "#services" },
+      { name: "Pricing", href: "#pricing" },
+      { name: "Integrations", href: "#integrations" },
+    ],
+    Company: [
+      { name: "About Us", href: "/about" },
+      { name: "Use Cases", href: "#use-cases" },
+      { name: "Contact & Support", href: "#contact" },
+      { name: "Careers", href: "/careers" },
+    ],
+    Legal: [
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms of Service", href: "/terms-of-service" },
+      { name: "Cookie Policy", href: "/cookie-policy" },
+    ],
   };
 
   return (
@@ -99,34 +119,37 @@ export function Footer() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-16"
         >
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-full gold-gradient flex items-center justify-center">
-                <span className="text-sm font-black text-[#1a1400]">S</span>
+          {/* Brand Identity */}
+          <div className="col-span-2">
+            <Link href="/" className="inline-flex items-center gap-2 mb-4 group">
+              <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center transition-transform group-hover:scale-105">
+                <span className="text-sm font-cursive text-[#1a1400]">ACS</span>
               </div>
-              <span className="text-lg font-bold">Sovereign</span>
-            </div>
-            <p className="text-sm text-on-surface-variant leading-relaxed">
-              Enterprise communication,
-              <br />
-              reimagined with quiet authority.
+            </Link>
+            <p className="text-sm text-on-surface-variant leading-relaxed max-w-sm mb-6">
+              Enterprise communication, reimagined with quiet authority. Carrier-grade CPaaS, CCaaS, and intelligent software solutions.
             </p>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-low border border-white/[0.04] text-xs text-on-surface-variant">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>All Systems Operational (99.9% SLA)</span>
+            </div>
           </div>
 
-          {/* Link columns */}
-          {Object.entries(footerLinks).map(([category, links], i) => (
-            <div key={category}>
-              <h4 className="text-label text-on-surface mb-4">{category}</h4>
+          {/* Dynamic Link Columns */}
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category} className="col-span-1">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-on-surface mb-4">
+                {category}
+              </h4>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-300"
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-on-surface-variant hover:text-primary transition-colors duration-200"
                     >
-                      {link}
-                    </a>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -134,29 +157,36 @@ export function Footer() {
           ))}
         </motion.div>
 
-        {/* Bottom bar */}
+        {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
-          style={{
-            borderTop: "1px solid rgba(229,226,225,0.06)",
-          }}
+          className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 border-t border-white/[0.06]"
         >
           <p className="text-xs text-on-surface-variant">
-            © {new Date().getFullYear()} Sovereign. All rights reserved.
+            © {new Date().getFullYear()} ACS. All rights reserved.
           </p>
+
           <div className="flex items-center gap-6">
-            {["Twitter", "LinkedIn", "GitHub"].map((social) => (
-              <a
-                key={social}
-                href="#"
-                className="text-xs text-on-surface-variant hover:text-primary transition-colors duration-300"
-              >
-                {social}
-              </a>
-            ))}
+            <Link
+              href="/privacy-policy"
+              className="text-xs text-on-surface-variant hover:text-primary transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/terms-of-service"
+              className="text-xs text-on-surface-variant hover:text-primary transition-colors"
+            >
+              Terms
+            </Link>
+            <Link
+              href="/cookie-policy"
+              className="text-xs text-on-surface-variant hover:text-primary transition-colors"
+            >
+              Cookies
+            </Link>
           </div>
         </motion.div>
       </div>

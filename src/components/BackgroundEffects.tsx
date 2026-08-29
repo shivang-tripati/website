@@ -314,9 +314,9 @@ export function ParticleField({
 }
 
 // ============================================
-// 4. COMBINED: The Sovereign Background
+// 4. COMBINED: The ACS Background
 // ============================================
-export function SovereignBackground({
+export function ACSBackground({
   variant = "hero",
   className = "",
 }: {

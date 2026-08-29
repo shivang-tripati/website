@@ -11,6 +11,7 @@ import { IntegrationsSection } from "@/components/IntegrationsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { CTASection, Footer } from "@/components/CTAFooter";
+import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <IntegrationsSection />
       <TestimonialsSection />
       <PricingSection />
+      <ContactSection />
       <CTASection />
       <Footer />
     </main>
